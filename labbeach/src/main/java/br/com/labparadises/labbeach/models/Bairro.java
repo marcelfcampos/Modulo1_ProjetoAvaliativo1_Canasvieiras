@@ -1,15 +1,17 @@
 package br.com.labparadises.labbeach.models;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.*;
 
-@Setter @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode
+//@Setter @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode
 
-
+@Entity
+@Table(name = "bairros")
 public class Bairro {
 
-    //Colunas no do banco de dados
-    private Long id;    // Id Auto incrementável - JPA gera automáticamente
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nome;
     private String descricao;
     private Integer populacao;
