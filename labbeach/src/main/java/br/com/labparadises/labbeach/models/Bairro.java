@@ -3,12 +3,13 @@ package br.com.labparadises.labbeach.models;
 import jakarta.persistence.*;
 import lombok.*;
 
-//@Setter @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode
+@Setter @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode
 
 @Entity
-@Table(name = "bairros")
+@Table(name = "bairros") //Utilizando a anotação para mapeamento do nome da tabela
 public class Bairro {
 
+    //Atributos da Praia
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
