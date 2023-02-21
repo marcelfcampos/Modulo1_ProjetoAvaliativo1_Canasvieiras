@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+    /*
+     Controllers: guardam as classes do tipo controllers onde organizam os endpoint, e os endpoint são os endereços onde
+     a API será acessada.
+     */
 
 @RestController //Anotação de classe
 @RequestMapping("/bairros") //Endpoint -> caminho mapeado com String.
@@ -59,5 +63,11 @@ public class BairroControllers {
     /*
     OBS:.Como fazer uma requisição  http se não há um Front-End, não há um lado cliente para comunicar com este lado
     servidor, com a nossa API. Por esse motivo usamos a ferramenta chamada Postman ou o Insomnia utilizada para testar a
-    API, esses nos serviços WEB sem a necessidade de estar rodando um Front-End da Aplicação.
+    API, esses nos serviços WEB sem a necessidade de estar rodando um Front-End da Aplicação. Com parâmetros que podemos
+    definir.
+    */
+
+    /*
+    OBS:.Para criar uma API, nós definimos os endpoints nas classes CONTROLLER, que invocam métodos (executar tarefa)
+     de uma classe SERVICE, que por sua vez invocam os métodos (executar tarefa) de um REPOSITORY para persistir na base.
     */
