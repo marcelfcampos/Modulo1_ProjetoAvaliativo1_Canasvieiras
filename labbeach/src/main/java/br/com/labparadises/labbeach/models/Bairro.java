@@ -11,8 +11,14 @@ import lombok.*;
 
 @Setter @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode
 
-@Entity //Representa uma tabela da base de dados,  cada instância da entity corresponde a uma linha da tabela.
-@Table(name = "bairros") //Utilizando a anotação para mapeamento do nome da tabela.
+    //*Entity: Representa uma tabela da base de dados,  cada instância da entity corresponde a uma linha da tabela.
+@Entity
+
+    /*
+    Table: passa pelo parâmetro name, qual é o nome da tabela, caso o nome da tabela seja diferente do nome da classe
+    podemos utilizar o mapeamento "string" para renomear o nome da table.
+    */
+@Table(name = "bairros") //*Mapeamento do nome da tabela
 public class Bairro {
 
     //*Id->Informa ao JPA qual campo/atributo da entidade está relacionado à chave primária da tabela no banco de dados.
@@ -21,7 +27,14 @@ public class Bairro {
     //*Informa ao provedor de persistência os valores a serem atribuídos ao identificador único.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    //*Atributo do Bairro:
+    /*
+    Atributo: equivalentes as colunas do banco de dados, os tipos acabam sendo muito parecidos:
+        varchar: se trata de string; int é int, etc....
+        Caso algum atributo tenha um nome diferente da coluna do banco de dados, podemos usar a anotação:
+        @colunn(nome da coluna)
+     */
+
+    //*Atributo das colunas da tabela bairros:
     private Long id;
     private String nome;
     private String descricao;
