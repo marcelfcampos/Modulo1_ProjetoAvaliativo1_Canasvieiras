@@ -4,6 +4,8 @@ import br.com.labparadises.labbeach.models.Bairro;
 import br.com.labparadises.labbeach.repositories.BairroRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
     /*
     Services: É a camada intermediária entre Controllers e Repository e realiza algum processamento adicional caso seja
     necessário. Ela tem comportamentos que não se encaixam em outras classes de forma natural e encapsulada. Realizando
@@ -53,5 +55,26 @@ public class BairroServices {
     public void salvar(Bairro bairro){
         repository.save(bairro);
     }
+    /*
+    Após o método excluir criado aqui no Service, iremos ao Controllers e invocar:
+
+     */
+    public void excluir(Bairro bairro) {    //recebe bairro como parâmetro.
+        repository.delete(bairro);          //repository também recebe bairro como parâmetro.
+    }
+
+    public List<Bairro>buscaTodos() {                   //Retorna uma Lista de Bairro, chamando de buscaTodos
+        return (List<Bairro>) repository.findAll();     //Invoca o repository findAll, buscando todos os bairros da base.
+    }
+
+    /*
+    Este método findById não retorna exatamente um bairro, irá retorna um optional de um bairro que é  um tipo de classe
+    que trata um problema que temos com null no java, como ele vem como optional, precisamos extrair um valor do bairro
+    de dentro desse optional, invocando o método get dentro do optional para retornar o bairro que vem nesse get
+     */
+    public Bairro buscaPorId(Long id) {
+        return repository.findById(id).get();
+    }
 
 }
+
