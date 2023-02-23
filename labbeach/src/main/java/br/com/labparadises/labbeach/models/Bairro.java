@@ -41,8 +41,9 @@ public class Bairro {
     private String descricao;
     private Integer populacao;
 
+
     @ManyToOne
     @JoinColumn(name = "praia_id")
-    private Bairro turma;
+    private Bairro bairro;
 
 }

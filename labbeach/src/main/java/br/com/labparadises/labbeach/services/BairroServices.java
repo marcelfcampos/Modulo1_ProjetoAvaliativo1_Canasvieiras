@@ -2,6 +2,7 @@ package br.com.labparadises.labbeach.services;
 
 import br.com.labparadises.labbeach.models.Bairro;
 import br.com.labparadises.labbeach.repositories.BairroRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -35,6 +36,8 @@ import java.util.List;
     nos métodos da classe na seguencia.
      */
 public class BairroServices {
+
+    @Autowired
 
     //*Atributo do tipo Repository: serve para criar uma instância
     private BairroRepository repository;

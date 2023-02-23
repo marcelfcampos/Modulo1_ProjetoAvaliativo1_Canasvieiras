@@ -1,7 +1,6 @@
 package br.com.labparadises.labbeach.repositories;
 
 import br.com.labparadises.labbeach.models.Bairro;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,18 +14,24 @@ de dados, usando uma interface semelhante à de uma coleção, essa camada de do
 
 //Criação do Crud, identificação do tipo da entidade (Bairro)
 //Tipo da coluna Id de identificação (Long)
+
 public interface BairroRepository extends CrudRepository<Bairro, Long> {
 
-    @Query(value = "select * from Bairro where ativo = 1",nativeQuery = true)
-    List<Bairro> findAllAtivas();
+}
+
+//    @Query(value = "select * from Bairro where ativo = 1",nativeQuery = true)
+//    List<Bairro> findAllAtivas();
+
+//        @Query(value = "select * from Bairro p WHERE p.descricao = :decricao")
+//        public Bairro findbyDescricao(String descricao);
+
+
+
+
 
 //    @Query(value = "select * from Bairro p WHERE p.descricao = :decricao")
 //        public Bairro findbyDescricao(String descricao);
 
-
-    public List<Bairro> findByNome(String nome);
-
-}
 
         /*
 

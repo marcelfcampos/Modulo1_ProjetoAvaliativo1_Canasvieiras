@@ -12,7 +12,7 @@ import lombok.*;
 
 public class Praia {
 
-    @Id
+    @Id //Chave primária do banco de dados
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     //Atributos da Praia
@@ -20,6 +20,11 @@ public class Praia {
     private String nome;
     private Boolean acessibilidade;
     private String statuspraia;
+
+
+//    @ManyToOne
+//    @JoinColumn(name = "bairro_id")
+//    private Praia bairro;
 
 
 }

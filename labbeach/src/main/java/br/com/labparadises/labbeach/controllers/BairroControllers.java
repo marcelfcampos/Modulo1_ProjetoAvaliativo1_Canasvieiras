@@ -132,3 +132,7 @@ public class BairroControllers {
     OBS:.Para criar uma API, nós definimos os endpoints nas classes CONTROLLER, que invocam métodos (executar tarefa)
      de uma classe SERVICE, que por sua vez invocam os métodos (executar tarefa) de um REPOSITORY para persistir na base.
     */
+
+
+
+
