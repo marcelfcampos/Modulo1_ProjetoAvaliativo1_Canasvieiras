@@ -36,8 +36,13 @@ public class Bairro {
 
     //*Atributo das colunas da tabela bairros:
     private Long id;
+
     private String nome;
     private String descricao;
     private Integer populacao;
+
+    @ManyToOne
+    @JoinColumn(name = "praia_id")
+    private Bairro turma;
 
 }
