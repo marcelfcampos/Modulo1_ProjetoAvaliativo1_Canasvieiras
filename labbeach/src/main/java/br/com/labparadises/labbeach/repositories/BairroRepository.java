@@ -17,8 +17,8 @@ de dados, usando uma interface semelhante à de uma coleção, essa camada de do
 //Tipo da coluna Id de identificação (Long)
 public interface BairroRepository extends CrudRepository<Bairro, Long> {
 
-    @Query(value = "SELECT * FROM bairros p WHERE p.descricao = :decricao")
-        public Bairro findbyDescricao(String descraicao);
+    @Query(value = "select * from Bairro p WHERE p.descricao = :decricao")
+        public Bairro findbyDescricao(String descricao);
 
 
     public List<Bairro> findByNome(String nome);
