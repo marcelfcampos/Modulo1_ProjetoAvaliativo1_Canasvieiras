@@ -24,19 +24,21 @@ Listagens de praias por população no bairro
 ROTEIRO DA APLICAÇÃO:
 A aplicação realizada individualmente deverá seguir os requisitos apresentados à seguir.
 
-•	REQUISITO GERAL DA APLICAÇÃO:
-o	Utilização de Spring: Boot, MVC, Data
-o	Criação de API Rest
-o	Utilização de Git com GitHub
-o	Uso do banco de dados PostgreSQL
-•	CADASTRO DE BAIRRO:
-o	Não permitir cadastro duplicado
-o	Não permitir cadastro com campos inválidos
-o	Campos necessários:
-♣	Identificador da categoria: Único, autogerado.
-♣	Nome do bairro: Única, tipo texto, preenchimento obrigatório.
-♣	Descrição do bairro: Tipo texto, preenchimento não obrigatório.
-♣	População do bairro: Tipo inteiro, preenchimento não obrigatório.
+  •	REQUISITO GERAL DA APLICAÇÃO:
+      o	Utilização de Spring: Boot, MVC, Data
+      o	Criação de API Rest
+      o	Utilização de Git com GitHub
+      o	Uso do banco de dados PostgreSQL
+      
+  •	CADASTRO DE BAIRRO:
+      o	Não permitir cadastro duplicado
+      o	Não permitir cadastro com campos inválidos
+      o	Campos necessários:
+          ♣	Identificador da categoria: Único, autogerado.
+          ♣	Nome do bairro: Única, tipo texto, preenchimento obrigatório.
+          ♣	Descrição do bairro: Tipo texto, preenchimento não obrigatório.
+          ♣	População do bairro: Tipo inteiro, preenchimento não obrigatório.
+          
 •	LISTAGEM DE BAIRROS:
 o	Listar todas os bairros cadastrados com seus respectivos campos
 •	EXCLUSÃO DE BAIRRO:
