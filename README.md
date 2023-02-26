@@ -118,9 +118,31 @@ A aplicação realizada individualmente deverá seguir os requisitos apresentado
         •	Ex. praias em bairros com população até 15000 pessoas.
 
 
+BAIRRO E PRAIA DE FLORIANÓPOLIS / SC:
 
+      BAIRRO: COQUEIROS
 
+      1. Identificador do bairro (id): Único, autogerado.
 
+      2. Nome do bairro: Coqueiros. (Tipo texto)
+
+      3. Descrição do bairro: Destaca-se pelas opções de lazer, entretenimento e gastronomia. (Tipo texto)
+
+      4. População do bairro: 14.000 - 14 mil habitantes (Tipo inteiro)
+
+______________________________________________________________________________________________________
+
+      PRAIA : PRAIA DO RISO - BAIRRO COQUEIROS
+
+      1. Identificador da praia: (id): Único, autogerado.
+
+      2. Identificador do bairro: Utilizar categoria válida e já criada
+
+      3. Nome da praia: Praia do Riso
+
+      4. Possui acessibilidade: verdadeiro/falso (sim ou não) - (Tipo booleano): não
+
+      5. Status da praia (própria, imprópria): imprópria (Tipo texto)
 
 
 
