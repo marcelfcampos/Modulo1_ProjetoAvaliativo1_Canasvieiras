@@ -37,7 +37,7 @@ import java.util.List;
      */
 public class BairroServices {
 
-    @Autowired
+    @Autowired    //injeção de dependência do Spring
 
     //*Atributo do tipo Repository: serve para criar uma instância
     private BairroRepository repository;

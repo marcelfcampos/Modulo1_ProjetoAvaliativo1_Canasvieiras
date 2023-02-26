@@ -45,7 +45,7 @@ public class BairroControllers {
     /*
     @PutMapping -> Chamamos um  Método que utiliza o PUT chamando ele de atualizar, recebendo também um Body contendo
     um bairro que queremos atualizar na nossa base e podemos utilizar o mesmo método de salvar do Service, passando
-    o nosso bairro, porque lá dentro do nosso Service ele vai utilizar o save do Repository que é extamente o que também
+    o nosso bairro, porque lá dentro do nosso Service ele vai utilizar o save do Repository que é exatamente o que também
     utilizamos para atualizar . Com base no id, que será recebido, o Spring Data já vai saber se precisa fazer
     um insert ou um update na base utilizando aquele método save. -> repository.save(bairro); <-
     */

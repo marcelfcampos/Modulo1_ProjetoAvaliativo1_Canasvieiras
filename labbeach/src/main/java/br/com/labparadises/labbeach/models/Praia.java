@@ -6,6 +6,7 @@ import lombok.*;
 
 @Setter @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode
 
+    //*Entity: Representa uma tabela da base de dados,  cada instância da entity corresponde a uma linha da tabela.
 @Entity
 @Table(name = "praias") //Utilizando a anotação para mapeamneto do nome da tabela
 
@@ -15,7 +16,7 @@ public class Praia {
     @Id //Chave primária do banco de dados
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    //Atributos da Praia
+    //*Atributo das colunas da tabela praia
     private Long id;
     private String nome;
     private Boolean acessibilidade;
