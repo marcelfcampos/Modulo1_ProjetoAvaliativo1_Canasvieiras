@@ -232,7 +232,7 @@ ________________________________________________________________________________
 
 ***** O QUE SIGNIFICA CADA PALAVRA RESERVADA: (https://www.devmedia.com.br/o-que-significa-cada-palavra-reservada/8320)
 **** Muita gente imagina que para estudar a linguagem Java tem que aprender (decorar) todas as palavras reservadas, pois temos que usá-las de forma que não causem erros em nossas programações.
-*** O que precisamos entender mesmo é como são divididas e quando vamos usá-las, elas são divididas em modificadores de acesso, modificadores de classe, método e variável, controle de fluxo, tratamento de erros, controle de pacotes, primitivas, palavras-chaves de variáveis, void para retornos e também as palavras reservadas não utilizadas.
+*** O que precisamos entender mesmo é como são divididas e quando vamos usá-las, elas são divididas em: modificadores de acesso, modificadores de classe, método e variável, controle de fluxo, tratamento de erros, controle de pacotes, primitivas, palavras-chaves de variáveis, void para retornos e também as palavras reservadas não utilizadas.
 
 ** PALAVRAS RESERVADAS
 
@@ -253,8 +253,6 @@ ________________________________________________________________________________
 
 ·extends: Usada para estender uma classe a outra, isto é, indicar para uma superclasse que uma subclasse está estendendo, (herança);
 
-·final:  Vimos no artigo anterior, torna impossível estender uma classe, sobrepor um método ou reiniciar uma variável;
-
 ·implements: Usada para indicar a uma interface que uma classe a implementará;
 
 ·interface: Palavra chave para identificar uma interface;
@@ -267,8 +265,7 @@ ________________________________________________________________________________
 
 ·strictfp: Usada na frente de um método para indicar que os números de ponto flutuantes seguirão regras restritas de ponto flutuante em todas as expressões;
 
-	·Método: Indica que a variável pode não ficar sincronizada por ser usada em fragmentos.
-
+·Método: Indica que a variável pode não ficar sincronizada por ser usada em fragmentos.
 
 ·syncronized: Indica que um método só pode ser acessado por um seguimento de cada vez;
 
@@ -321,7 +318,7 @@ ________________________________________________________________________________
 
 * CONTROLE DE PACOTES:
 
-·import: Fala-se que é para importar pacotes ou classes para o código, o que não é verdade, veremos mais a frente.
+·import: Fala-se que é para importar pacotes ou classes para o código, o que não é verdade.
 
 ·package: Especifica a que pacote todas as classes de um arquivo fonte pertence.
 
@@ -368,7 +365,6 @@ ________________________________________________________________________________
 
 
 ** DIFERENÇA entre as ANOTAÇÕES @Repository e @Service
-
 
 https://www.youtube.com/watch?v=a_LbYXUzZWs
 
