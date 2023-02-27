@@ -145,10 +145,9 @@ ________________________________________________________________________________
       5. Status da praia (própria, imprópria): imprópria (Tipo texto)
       
       
+_______________________________________________________________________________________________________
       
-      
-      
- MATERIAL RESUMO DE APOIO COMPLEMENTAR:
+ MATERIAL DE PESQUISA - RESUMO DE APOIO COMPLEMENTAR:
  
 * Criar uma API, utilizando os métodos de acesso: Adicionar uma dependência extra no nosso arquivo pom.xml (acessar mvn (maven) site: https://mvnrepository.com -> search (procurar por):  >> Spring Boot Starten Web << adicionar no pom.xml nas < dependency > (dependências)
 
@@ -443,18 +442,9 @@ Exemplo: Tendo o Spring em uma camada de serviço que realiza essa verificação
 				throw new Exception("Usuário inativo!") 
  
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-CRUD:
-
-
-
-XXXXXX LAB365 - Spring 04 - Aç  :tps://www.youtube.com/watch?v=h3MLrR-DuLw XXXXXX
+------------------------------------------------------------------------------
 
 API REST é uma abstração de arquitetura de software que fornece dados em um formato padronizado para modelos de requisições HTTP. Por exemplo, sites em WordPress podem conter plugins que acessam páginas de redes sociais para tornar a interação com o conteúdo mais atrativa e interativa.
-
-Endenter o que é uma API REST, no vídeo anterior criamos uma Api com um endpoint, para receber requisições post e salvar produtos na base.
 
 ** API: -> Application Programming Interface e que podemos traduzir como Interface de Programação de Aplicativo. Elas são responsáveis por padronizar determinadas funções ou componentes em um sistema. São verificadas previamente e continuamente aprimoradas por quem as desenvolveu e mantém.
 
@@ -486,7 +476,7 @@ Um endpoint PUT, um endpoint DELETE e 2 endpoints utilizando o método GET, um p
 
 **OBS:.ponto de atenção, uma requisição do tipo GET, não leva Body, para passar parâmetros nessas requisições como o ID do bairro que estamos querendo buscar, podemos utilizar os parâmetros de Query ou os parâmetros de Patch (Patch, significa pacote, o que indicaria mais como um pacote de atualização ou correção.), vamos ver como funciona:
 
-**Vimos que para fazer um CRUD, utilizamos esses métodos http ou POST, PUT, GET e DELETE. Mas no REPOSITORY (Repositoy), que métodos utilizamos para acessar o banco de dados em cada uma dessas letrinhas do CRUD.
+**Para fazer um CRUD, utilizamos esses métodos http ou POST, PUT, GET e DELETE. Mas no REPOSITORY (Repositoy), que métodos utilizamos para acessar o banco de dados em cada uma dessas letrinhas do CRUD.
 Para atualizar uma entidade que é o PUT do CRUD, utilizamos o mesmo método save, que utilizamos no Create (POST). 
 
 Para Buscar temos o:
@@ -497,89 +487,4 @@ Delete -> que recebe uma entidade e exclui o registro da base.
 
 Temos também o:
 Delete by Id -> que recebe um Id e exclui o registro que possuir esse Id
-
-***VAMOS PARA O CÓGIGO FAZER ESSE CRUD DA NOSSA ENTIDADE BAIRRO (PROJETO AVALIAÇÃO MÓDULO 1)*** 4:32
-
-1. BairroControllers
-
-
-
-
-
-RequestMapping
-
-
-
-  -> public void excluir(Bairro bairro); {    //Recebe um bairro como parâmetro
-        repository.delete(bairro);             //Recebe este bairro como parâmetro
-
-
-
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-_____________________________________
-
-
-Exercicios_Modulo-1_Back_End
-Envio de Exercicios_Modulo-1_Back_End
-
-Modulo1_ProjetoAvaliativo1_Canasvieiras
-
-
-
-
-________________PROJETO README_____________
-
-# Modulo1_ProjetoAvaliativo1
-Projeto avaliativo relacionado ao Back-End 
-
-Turma: Canasvieiras
-Autor: Marcel Ferreira Campos
-
-Criar a API Rest do LabBeach
-
-Aplicação Desenvolvida para controle das praias de Florianópolis, criando o Back-End de um sistema de praias com os seguintes requisitos:
-
-# Modulo1_ProjetoAvaliativo1_Canasvieiras
-
-Projeto avaliativo relacionado ao Back-End 
-
-Turma: Canasvieiras
-Autor: Marcel Ferreira Campos
-
-Criar a API Rest do LabBeach
-
-Aplicação Desenvolvida para controle das praias de Florianópolis, criando o Back-End de um sistema de praias com os seguintes requisitos:
-
-Cadastro de bairro
-Listagem de bairro
-Exclusão de bairro
-Cadastro de praia
-Listagem de praias
-Edição de praias por identificador
-Exclusão de praias por identificador
-Listagem de praias conforme o status
-Listagem de praias com acessibilidade
-Listagens de praias por população no bairro
-
-//Documentar os endpoint: onde faremos a busca do servido (caminho) -> /:porta/.... ->(exemplo: localhost:8080/caminho
-// http://localhost:8080/praias (este é um endpoint para acessar dados de praia e assim sucessivamente para todos os endpoint que serão disponibilizados
-
-_________________
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
 
