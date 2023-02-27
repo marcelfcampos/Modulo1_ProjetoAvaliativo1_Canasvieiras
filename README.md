@@ -487,4 +487,3 @@ Delete -> que recebe uma entidade e exclui o registro da base.
 
 Temos também o:
 Delete by Id -> que recebe um Id e exclui o registro que possuir esse Id
-
