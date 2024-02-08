@@ -11,7 +11,7 @@ Criar a API Rest do LabBeach
 PROPRIEDADES DA APLICAÇÃO:
 
 * Nome do usuário do banco de dados: postgres
-* password: 32449173
+* password: ********
 
 spring.jpa.database=POSTGRESQL
 spring.datasource.platform=postgres
