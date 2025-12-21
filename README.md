@@ -124,5 +124,3 @@ Este projeto representa minha evolução prática na área de desenvolvimento e 
 - Novas funcionalidades
 
 
-Temos também o:
-Delete by Id -> que recebe um Id e exclui o registro que possuir esse Id
