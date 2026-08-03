@@ -1,4 +1,4 @@
-# 📌 Projeto – Gerenciamento de Praias e Bairros de Florianópolis
+# Projeto – Gerenciamento de Praias e Bairros de Florianópolis
 ## 📖 Descrição
 
 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso no SENAI / SESC, com o objetivo de criar uma aplicação para o gerenciamento de bairros e praias de Florianópolis/SC.
